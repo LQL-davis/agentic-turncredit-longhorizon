@@ -1,0 +1,10 @@
+# Use portable shell/Python line endings. Preserve frozen bytes for hash checks.
+* text=auto eol=lf
+data/** -text
+environments/ShopSimulator/** -text
+patches/** -text
+src/shopping_grpo/resources/** -text
+*.png binary
+*.jpg binary
+*.gz binary
+*.parquet binary

@@ -1,0 +1,66 @@
+{
+  "benchmark": "Final-200 Clean",
+  "benchmark_sha256": "d99112a20ef47534c27a32e4b38229bf048dcc6b06fef2e3e919aac3093662f5",
+  "expected_tasks": 200,
+  "baseline": {
+    "strict_successes": 2,
+    "strict_success_rate": 0.01
+  },
+  "sft_stage_c": {
+    "strict_successes": 124,
+    "strict_success_rate": 0.62
+  },
+  "a": {
+    "strict_successes": 123,
+    "strict_success_rate": 0.615,
+    "mean_final_reward": 0.48927894440628816,
+    "average_steps": 8.18,
+    "reward_valid_rate": 0.965
+  },
+  "b": {
+    "strict_successes": 127,
+    "strict_success_rate": 0.635,
+    "mean_final_reward": 0.5340320694062881,
+    "average_steps": 8.425,
+    "reward_valid_rate": 0.935
+  },
+  "paired": {
+    "both_success": 120,
+    "a_only_success": 3,
+    "b_only_success": 7,
+    "both_failure": 70
+  },
+  "mcnemar_exact_p": 0.34375,
+  "protocol": {
+    "rollouts_per_task": 1,
+    "max_steps": 35,
+    "max_tokens": 512,
+    "temperature": 0,
+    "top_p": 1,
+    "context_length": 24576,
+    "context_safety_margin": 512,
+    "compaction": false,
+    "checkpoint_step": 500
+  },
+  "training": {
+    "model": "Qwen3.5-2B SFT Stage C",
+    "gpu": "2 x H100",
+    "actual_optimizer_updates": 500,
+    "recorded_attempts": 840,
+    "skipped_updates": 340,
+    "seed": 42,
+    "turn_credit_strength": 0.5,
+    "turn_credit_cap": 0.25,
+    "accepted_trajectory_entries": 4000,
+    "turn_credit_applied": 3396,
+    "turn_credit_fallback": 604
+  },
+  "judge_results_available": false,
+  "comparison_type": "single B run versus historical A; not a contemporaneous multi-seed causal ablation",
+  "source_artifact_sha256": {
+    "summary.json": "7b2ce6276c242d0ad6b1f4f59dd502938f0b13c3d3ab58c76305c3b7f9c3a17e",
+    "paired_comparison.json": "ec366c0ddeccb13eff5e10cc86da1ada2d9fd6aa6865fb34802fc941c786acda",
+    "trajectories.jsonl": "27628776aebdc571e7ab537226f12473ac9a7fc15b579479b0c14f91df47490d",
+    "a-trajectories.jsonl": "2b616dfc1973e85d96194638fce3720d301d232c0a3822096a49141be0c833aa"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "a": {
+    "strict_successes": 123,
+    "strict_success_rate": 0.615,
+    "mean_final_reward": 0.48927894440628816,
+    "average_steps": 8.18,
+    "reward_valid_rate": 0.965
+  },
+  "b": {
+    "strict_successes": 127,
+    "strict_success_rate": 0.635,
+    "mean_final_reward": 0.5340320694062881,
+    "average_steps": 8.425,
+    "reward_valid_rate": 0.935
+  },
+  "paired": {
+    "both_success": 120,
+    "a_only_success": 3,
+    "b_only_success": 7,
+    "both_failure": 70
+  },
+  "mcnemar_exact_p": 0.34375,
+  "changed_tasks": [
+    {
+      "task_id": 3480,
+      "a_success": true,
+      "b_success": false
+    },
+    {
+      "task_id": 3589,
+      "a_success": false,
+      "b_success": true
+    },
+    {
+      "task_id": 5049,
+      "a_success": false,
+      "b_success": true
+    },
+    {
+      "task_id": 6219,
+      "a_success": false,
+      "b_success": true
+    },
+    {
+      "task_id": 7679,
+      "a_success": false,
+      "b_success": true
+    },
+    {
+      "task_id": 7684,
+      "a_success": false,
+      "b_success": true
+    },
+    {
+      "task_id": 9819,
+      "a_success": false,
+      "b_success": true
+    },
+    {
+      "task_id": 11976,
+      "a_success": true,
+      "b_success": false
+    },
+    {
+      "task_id": 13431,
+      "a_success": true,
+      "b_success": false
+    },
+    {
+      "task_id": 13625,
+      "a_success": false,
+      "b_success": true
+    }
+  ],
+  "limitations": "Historical A comparison; same tasks and rollout protocol, but not a contemporaneous multi-seed causal ablation."
+}

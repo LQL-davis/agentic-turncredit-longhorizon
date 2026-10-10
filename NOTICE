@@ -1,0 +1,10 @@
+Agentic-TurnCredit-LongHorizon: reproduction and extension.
+
+Upstream shopping framework and data: https://github.com/YYHDBL/shopping-grpo-longhorizon
+Embedded environment: https://github.com/ShopAgent-Team/ShopSimulator
+Training/inference/models: https://github.com/verl-project/verl ; https://github.com/vllm-project/vllm ; https://github.com/QwenLM
+Related project: https://github.com/qiqihezh/agentic-grpo-longhorizon
+
+The highlighted extension uses Query-only training Rubrics, public-page evidence and bounded token-centered turn-level advantage corrections. The complete inherited training framework is not independently authored here.
+
+The inherited snapshot has no root LICENSE. This release does not assign a new blanket license to inherited source, product data or teacher data. Original component rights and applicable upstream terms remain in force.

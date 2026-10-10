@@ -1,0 +1,38 @@
+{
+  "environment": "shopsimulator-environment-v2.1",
+  "provenance": {
+    "excluded": "新 SFT 全部任务 + 冻结评测 200 题",
+    "note": "未做难度探测，缺少 probe_steps / length_bucket 字段",
+    "reason": "保持 SFT 任务与 GRPO 任务池不相交（沿用原始实验设计）",
+    "rebuilt": true,
+    "seed": 20260808
+  },
+  "reward": "shopsimulator-reward-v3",
+  "schema_version": "shopping-grpo-dataset-v1",
+  "train": {
+    "jsonl": "data/grpo/train.jsonl",
+    "parquet": "data/grpo/train.parquet",
+    "parquet_sha256": "98bb1799a42916b6ca2a1a2618f11cfec60f428e99e6ada448a78361768206e5",
+    "tasks": 1000
+  },
+  "validation": {
+    "jsonl": "data/grpo/validation.jsonl",
+    "parquet": "data/grpo/validation.parquet",
+    "parquet_sha256": "8c9fbdd22bf6d191d1da6bcca9c1612e170bb928483c4ce0c8d0934f9ba69317",
+    "tasks": 50
+  },
+  "release_audit": {
+    "method": "Actual Parquet extra_info.task_id matched against JSONL, active Pure V4 pool and Final-200",
+    "sft_grpo_train_overlap_task_ids": [
+      7682,
+      8993,
+      11298,
+      12380,
+      14953,
+      17219
+    ],
+    "sft_grpo_validation_overlap": 0,
+    "final200_overlap": 0,
+    "note": "Observed task boundaries supersede the earlier intended SFT exclusion in provenance. Recorded Parquet bytes and hashes are preserved."
+  }
+}
